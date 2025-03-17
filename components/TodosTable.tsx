@@ -21,7 +21,7 @@ const TodosTable = ({ todos }: { todos: ITodo[] }) => {
       </TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead>ID</TableHead>
+          {/* <TableHead>ID</TableHead> */}
           <TableHead>Title</TableHead>
           <TableHead>Completed</TableHead>
           <TableHead className="text-right">Actions</TableHead>
@@ -30,7 +30,7 @@ const TodosTable = ({ todos }: { todos: ITodo[] }) => {
       <TableBody>
         {todos.map((todo) => (
           <TableRow key={todo.id}>
-            <TableCell className="font-medium">{todo.id}</TableCell>
+            {/* <TableCell className="font-medium">{todo.id}</TableCell> */}
             <TableCell>{todo.title}</TableCell>
             <TableCell>
               {todo.completed ? (
